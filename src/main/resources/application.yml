@@ -1,0 +1,12 @@
+spring:
+ application:
+   name: postal-calculator
+ cloud:
+  stream:
+   bindings:
+    eventIn:
+     contentType: avro/bytes
+     destination: eventQueue
+     group: calculationConsumer
+server:
+ port: 8081
