@@ -8,5 +8,6 @@ spring:
      contentType: avro/bytes
      destination: eventQueue
      group: calculationConsumer
+
 server:
  port: 8081
