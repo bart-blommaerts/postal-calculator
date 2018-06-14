@@ -11,7 +11,7 @@ public class EventConsumer {
 
     @StreamListener(EventChannel.EVENT_IN)
     public void onMessage(Message<AvroEvent> eventAvro) {
-        AvroEvent avroEvent = eventAvro.getPayload();
+        var avroEvent = eventAvro.getPayload();
 
         System.out.println(avroEvent.getData());
         System.out.println(avroEvent.getEventUUID());

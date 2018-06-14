@@ -17,7 +17,7 @@ public class PostalCalculatorApplicationConfiguration {
     @Bean
     @StreamMessageConverter
     public MessageConverter eventMessageConverter() {
-        AvroSchemaMessageConverter avroSchemaMessageConverter = new AvroSchemaMessageConverter(MimeType.valueOf("avro/bytes"));
+        var avroSchemaMessageConverter = new AvroSchemaMessageConverter(MimeType.valueOf("avro/bytes"));
         avroSchemaMessageConverter.setSchemaLocation(new ClassPathResource("avro/Event.avsc"));
         return avroSchemaMessageConverter;
     }
