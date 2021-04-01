@@ -23,6 +23,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
 		<spring-cloud.version>Finchley.RC2</spring-cloud.version>
+
+  <sonar.projectKey>bart-blommaerts_postal-calculator</sonar.projectKey>
+  <sonar.organization>bart-blommaerts</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencyManagement>
